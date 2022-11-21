@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { SmallCard, MediumCard } from './';
+import { SmallCard, MediumCard, LargeCard } from './';
 
 const MainSection = ({ exploreData, cardsData }) => {
   const scrollRef = useRef();
@@ -45,6 +45,12 @@ const MainSection = ({ exploreData, cardsData }) => {
           ))}
         </div>
       </section>
+      <LargeCard
+        img="https://links.papareact.com/4cj"
+        title="The Greatest Outdoors"
+        description="Wishlists curated by Airbnb."
+        buttonText="Get Inspired"
+      />
     </main>
   );
 };
