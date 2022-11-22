@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 
 const SmallCard = ({ img, location, distance }) => {
   return (
@@ -7,7 +7,7 @@ const SmallCard = ({ img, location, distance }) => {
     hover:scale-105 transition duration-200 ease-out"
     >
       <div className="relative h-16 w-16">
-        <Image src={img} layout="fill" className="rounded-lg" />
+        <Image alt={location} src={img} layout="fill" className="rounded-lg" />
       </div>
       <div>
         <h2>{location}</h2>

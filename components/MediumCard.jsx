@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 
 const MediumCard = ({ img, title }) => {
   return (
@@ -6,6 +6,7 @@ const MediumCard = ({ img, title }) => {
       <div className="relative h-72 w-80 ">
         <Image
           src={img}
+          alt="Houses"
           layout="fill"
           objectFit="cover"
           className="rounded-xl"

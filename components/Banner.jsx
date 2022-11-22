@@ -1,16 +1,14 @@
-import Image from 'next/image';
-
-// https://links.papareact.com/0fm //https://im4.ezgif.com/tmp/ezgif-4-870b23c7a2.jpg //b4d3c69cfa.jpg
+import Image from 'next/legacy/image';
 
 const Banner = () => {
   return (
     <div className="relative h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[600px]  2xl:h-[700px] background-color: rgba(0, 0, 0, 0.75) ">
-      {/* <div class="absolute inset-0 w-full h-full bg-red-500 bg-opacity-50 z-10"></div> */}
       <Image
         src="https://links.papareact.com/0fm"
+        alt="Forest Banner"
         layout="fill"
         objectFit="cover"
-        className=""
+        priority
       />
 
       <div className="absolute top-1/2 w-full text-center">
