@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Banner, Header, MainSection } from './../components';
+import { Banner, Footer, Header, MainSection } from './../components';
 
 export default function Home({ exploreData, cardsData }) {
   return (
@@ -12,6 +12,7 @@ export default function Home({ exploreData, cardsData }) {
       <Header />
       <Banner />
       <MainSection exploreData={exploreData} cardsData={cardsData} />
+      <Footer />
     </div>
   );
 }

@@ -38,7 +38,7 @@ const MainSection = ({ exploreData, cardsData }) => {
         <h2 className="text-4xl font-semibold py-5">Live Anywhere</h2>
         <div
           ref={scrollRef}
-          className="flex space-x-3 overflow-scroll scrollbar-hide"
+          className="flex space-x-3 overflow-scroll scrollbar-hide p-5"
         >
           {cardsData?.map((item) => (
             <MediumCard key={item.img} title={item.title} img={item.img} />
