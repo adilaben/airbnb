@@ -22,7 +22,9 @@ const MainSection = ({ exploreData, cardsData }) => {
   return (
     <main className="max-w-7xl mx-auto px-8 sm:px-16">
       <section className=" pt-6">
-        <h2 className="text-4xl font-semibold pb-5 ">Explore Nearby</h2>
+        <h2 className="text-3xl sm:text-4xl  font-semibold pb-5 ">
+          Explore Nearby
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {exploreData?.map((item) => (
             <SmallCard
@@ -35,7 +37,9 @@ const MainSection = ({ exploreData, cardsData }) => {
         </div>
       </section>
       <section className=" pt-6">
-        <h2 className="text-4xl font-semibold py-5">Live Anywhere</h2>
+        <h2 className="text-3xl sm:text-4xl  font-semibold py-5">
+          Live Anywhere
+        </h2>
         <div
           ref={scrollRef}
           className="flex space-x-3 overflow-scroll scrollbar-hide p-5"
