@@ -3,7 +3,7 @@ import React from 'react';
 
 const LargeCard = ({ img, title, description, buttonText }) => {
   return (
-    <section className="relative py-16 cursor-pointer">
+    <section className="relative py-8 sm:py-16 cursor-pointer">
       <div className="relative h-96 min-w-[300px]">
         <Image
           src={img}
