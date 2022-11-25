@@ -37,13 +37,13 @@ const Banner = () => {
           />
         </div>
       </Carousel>
-      <div class="absolute inset-0 w-full h-full bg-gray-700 bg-opacity-50 "></div>
+      <div className="absolute inset-0 w-full h-full bg-gray-700 bg-opacity-50 "></div>
 
       <div className="absolute top-[25%] sm:top-[30%] lg:top-[40%]   w-full text-center">
         <p className="mb-4 text-3xl sm:text-4xl drop-shadow-lg font-extrabold leading-none md:text-5xl lg:text-6xl text-white ">
           Live anywhere anytime.
         </p>
-        <p class="sm:mb-8 mx-5  text-[1rem] sm:text-lg font-normal text-gray-300 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
+        <p className="sm:mb-8 mx-5  text-[1rem] sm:text-lg font-normal text-gray-300 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
           Book homes from local hosts in +190 countries and experience a place
           like you live there.
         </p>
