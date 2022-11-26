@@ -4,11 +4,7 @@ import Image from 'next/legacy/image';
 const Banner = () => {
   return (
     <div className="relative top-0 h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[660px] ">
-      <Carousel
-        indicators={false}
-        controls={false}
-        className="[&>:nth-child(1)]:rounded-none"
-      >
+      <Carousel indicators={false} className="[&>:nth-child(1)]:rounded-none">
         <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white rounded-none">
           <Image
             src="/assets/banner1.jpg"

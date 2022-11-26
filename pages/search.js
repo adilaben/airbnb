@@ -2,11 +2,9 @@ import { format } from 'date-fns';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React from 'react';
-import { Footer, Header } from '../components';
+import { Footer, Header, InfoCard } from '../components';
 
 const Search = ({ searchResults }) => {
-  console.log(searchResults);
-
   const router = useRouter();
   const { location, startDate, endDate, noOfGuests } = router.query;
 
@@ -28,8 +26,8 @@ const Search = ({ searchResults }) => {
         placeholder={`${location} | ${range} | ${noOfGuests} ${guestOrGuests}`}
       />
       <main className="flex">
-        <section className="flex-grow pt-14 px-6">
-          <p className="text-xs">
+        <section className="flex-grow pt-6 px-6">
+          <p className="text-sm">
             300+ Stays - {range} - for {noOfGuests} {guestOrGuests}
           </p>
           <h1 className="text-3xl font-semibold mt-2 mb-6">
@@ -42,6 +40,23 @@ const Search = ({ searchResults }) => {
             <p className="button">Price </p>
             <p className="button">Rooms and Beds</p>
             <p className="button">More Filters</p>
+          </div>
+
+          <div className="flex flex-col ">
+            {searchResults.map(
+              ({ img, location, title, description, star, price, total }) => (
+                <InfoCard
+                  key={img}
+                  img={img}
+                  location={location}
+                  title={title}
+                  description={description}
+                  star={star}
+                  price={price}
+                  total={total}
+                />
+              )
+            )}
           </div>
         </section>
       </main>
