@@ -5,8 +5,11 @@ export default function Home({ exploreData, cardsData }) {
   return (
     <div>
       <Head>
-        <title>AirBnb</title>
-        <meta name="description" content="An AirBnb clone." />
+        <title>Airbnb | Vacation Homes & Condo Rentals</title>
+        <meta
+          name="description"
+          content="Find the perfect place to stay at an amazing price in 191 countries. Belong anywhere with Airbnb."
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />

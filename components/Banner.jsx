@@ -45,7 +45,7 @@ const Banner = () => {
           Live anywhere anytime.
         </p>
         <p className="sm:mb-8 mx-5  text-[1rem] sm:text-lg font-normal text-gray-300 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
-          Book homes from local hosts in +190 countries and experience a place
+          Book homes from local hosts in 190+ countries and experience a place
           like you live there.
         </p>
 

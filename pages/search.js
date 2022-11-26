@@ -18,8 +18,11 @@ const Search = ({ searchResults }) => {
   return (
     <div>
       <Head>
-        <title>AirBnb | Search</title>
-        <meta name="description" content="An AirBnb clone." />
+        <title>Airbnb | Searching For Vacation Homes</title>
+        <meta
+          name="description"
+          content="Find the perfect place to stay at an amazing price in 191 countries. Belong anywhere with Airbnb."
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header
