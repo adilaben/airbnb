@@ -9,7 +9,7 @@ import {
 import { useState } from 'react';
 import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
-import { DateRangePicker } from 'react-date-range';
+import { DateRange } from 'react-date-range';
 import { useRouter } from 'next/router';
 import { addDays } from 'date-fns';
 
@@ -100,15 +100,16 @@ const Header = ({ placeholder }) => {
         </div>
       </div>
       {searchInput && (
-        <div className="flex flex-col col-span-3 mx-auto  ">
-          <DateRangePicker
-            className="[&>:nth-child(1)]:w-auto flex flex-col sm:flex-row"
+        <div className="flex flex-col col-span-5 sm:col-span-3 mx-auto  ">
+          <DateRange
+            editableDateInputs={true}
             ranges={[selectionRange]}
             onChange={handleSelect}
             minDate={new Date()}
             maxDate={addDays(new Date(), 900)}
             rangeColors={['#FD5B61']}
           />
+
           <div className="flex items-center border-b mb-4">
             <h2 className="text-2xl flex-grow font-semibold">
               Number of guests
