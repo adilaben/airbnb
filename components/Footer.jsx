@@ -33,10 +33,14 @@ const Footer = () => {
       </div>
       <div className=" pb-3 text-gray-800 font-semibold text-center text-sm border-t pt-3">
         <p>
-          2022
+          2022 &nbsp;
           <button
-            target="_blank"
-            href="https://www.linkedin.com/in/aadila-bendahou/"
+            onClick={() =>
+              window.open(
+                'https://www.linkedin.com/in/aadila-bendahou/',
+                '_blank'
+              )
+            }
           >
             Aâdila Bendahou.
           </button>
