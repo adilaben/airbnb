@@ -46,6 +46,12 @@ const Header = ({ placeholder }) => {
     key: 'selection',
   };
 
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      search();
+    }
+  };
+
   return (
     <header
       className="sticky top-0 z-50 grid 
@@ -79,6 +85,7 @@ const Header = ({ placeholder }) => {
       <div className="flex items-center col-span-3 sm:col-span-1 border-2 rounded-full sm:py-2 md:shadow-sm">
         <input
           value={searchInput}
+          onKeyDown={handleKeyPress}
           onChange={(e) => setSearchInput(e.target.value)}
           className="flex-grow text-ellipsis w-[100%] box-border	focus:ring-0 sm:pl-5 bg-transparent border-none hover:border-none outline-none text-sm text-gray-600 placeholder-gray-400"
           type="text"

@@ -33,7 +33,7 @@ const Footer = () => {
       </div>
       <div className=" pb-3 text-gray-800 font-semibold text-center text-sm border-t pt-3">
         <p>
-          {new Date().getFullYear()} &copy; &nbsp;
+          2022
           <button
             target="_blank"
             href="https://www.linkedin.com/in/aadila-bendahou/"
